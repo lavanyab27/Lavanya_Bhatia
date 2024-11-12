@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    /* Gradient Text Style */
+    .gradient-text {
+      font-size: 80px;
+      font-family: 'Castellar', sans-serif;
+      background: linear-gradient(to right, rgb(128,0,0), rgb(190,0,50)); /* Gradient colors */
+      -webkit-background-clip: text;
+      color: transparent; /* Makes the text color transparent so the gradient shows through */
+    }
+
+    /* Styling for the second title (IMAGE) */
+    .gradient-image {
+      font-size: 80px;
+      font-family: 'Arial Black', sans-serif;
+      background: linear-gradient(to right, rgb(190,0,50), rgb(128,0,0)); /* Different gradient for the second title */
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    /* Outer circle for sound toggle */
+    .outer-circle {
+      width: 30px;
+      height: 30px;
+      background-color: grey;
+      border-radius: 50%;
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Inner circle inside the outer circle when active */
+    .inner-circle {
+      width: 15px;
+      height: 15px;
+      background-color:red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; /* Initially hidden */
+    }
+
+    /* When active, show the inner circle */
+    .active .inner-circle {
+      display: block; /* Show when active */
+    }
+
+    /* Outer circle for full-screen toggle */
+    .fullscreen-circle {
+      width: 30px;
+      height: 30px;
+      background-color: grey;
+      border-radius: 50%;
+      position: absolute;
+      left: 200px; /* Position it slightly to the right */
+      bottom: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Inner circle inside full-screen toggle circle */
+    .fullscreen-inner-circle {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; /* Hidden by default */
+    }
+
+  </style>
+</head>
+<body>
+
+  <p style="position:absolute; left:700px; top:120px;" class="gradient-text"><strong>IMPOSTER</strong></p>
+
+  <p style="position:absolute; left:1135px; top:105px;" class="gradient-image"><strong>IMAGE</strong></p>
+
+  <p style="position:absolute; text-align:center; left:850px; top:280px; font-size:22px; font-family:Lucida Bright; color:white;">
+    Your reputation is everything.<br>
+    But what happens if it has been destroyed by a lie?
+	
+	<p style="position:absolute; left:80px; bottom:10px; font-size:22px; font-family:Lucida Bright; color:white;"><strong>Sound</strong></p>
+	<p style="position:absolute; left:240px; bottom:10px; font-size:22px; font-family:Lucida Bright; color:white;"><strong>Full screen</strong></p>
+	 <p style="position:absolute; left:1150px; font-size:40px; top:1470px;" class="gradient-text"><strong>SAMANTHA</strong></p>
+  </p>
+  <p style="position:absolute; left:450px; font-size:52px; top:830px;" class="gradient-text"><strong>Who is Samantha?</strong></p>
+  
+  <p style="position:absolute;
+text-align:center;
+left:150px;
+top:990px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;">We believe that the human body is more than just flesh and bone—<br>
+         It's a canvas for self-expression, a vessel of experiences,<br> and a reflection of our unique identities.</p>
+		 
+ <p style="position:absolute;
+text-align:center;
+left:50px;
+top:1200px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;">BIO</P>
+
+ <p style="position:absolute;
+text-align:center;
+left:50px;
+top:1300px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;">LIKES</P>
+
+<p style="position:absolute;
+text-align:center;
+left:50px;
+top:1400px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;">DISLIKES</P>
+
+<p style="position:absolute;
+text-align:center;
+left:450px;
+top:1470px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;"><I>PERSONALITY</P>
+  
+  <p style="position:absolute;
+text-align:center;
+left:40px;
+top:1540px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;"><I>Introvert</P>
+
+<p style="position:absolute;
+text-align:center;
+left:240px;
+top:1540px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;"><I>Extrovert</P>
+
+<p style="position:absolute;
+text-align:center;
+left:600px;
+top:1540px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;"><I>Thinking</P>
+
+<p style="position:absolute;
+text-align:center;
+left:840px;
+top:1540px;
+font-size:22px;
+font-family:Lucida Bright;
+color:white;"><I>Feeling</P>
+  
+  <button style="position:absolute;
+top:1580px;
+left:1200px;
+font-size:30px;
+background-color:#d3d3d3;" onclick="document.location='About.html'">Start Game</button>
+
+  <!-- Adjusting the positioning of the image -->
+  <img src="gif.gif" alt="Description of GIF" width="800" height="729px; top:280px;">
+  
+  <!-- Adjusting the positioning of the image -->
+ <img src="arrow.gif" alt="Description of GIF" width="250px" height="250px" style="position:absolute;left:1050px; top:500px;">
+
+
+ <!-- Adjusting the positioning of the image -->
+  <img src="samantha.jpg" alt="Description of Image" width="400" style="position:absolute; left:1050px; top:1050px;">
+  
+  <!-- Adjusting the positioning of the image -->
+  <img src="user1.png" alt="Description of Image" width="200" style="position:absolute; left:90px; top:1600px;">
+  
+  
+  <img src="user1.png" alt="Description of Image" width="200" style="position:absolute; left:690px; top:1600px;">
+
+  
+  <!-- The outer circle that toggles the inner circle for sound -->
+  <div class="outer-circle" id="toggle-circle">
+    <div class="inner-circle"></div>
+  </div>
+
+  <!-- The second outer circle for full-screen toggle -->
+  <div class="fullscreen-circle" id="fullscreen-circle">
+    <div class="fullscreen-inner-circle"></div>
+  </div>
+
+  <!-- Sound element to play/pause -->
+  <audio id="sound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+  <script>
+    const toggleCircle = document.getElementById('toggle-circle');
+    const fullscreenCircle = document.getElementById('fullscreen-circle');
+    const sound = document.getElementById('sound');
+    const innerCircle = toggleCircle.querySelector('.inner-circle');
+    const fullscreenInnerCircle = fullscreenCircle.querySelector('.fullscreen-inner-circle');
+
+    let isSoundActive = false;
+    let isFullscreenActive = false;
+
+    // Toggle sound inner circle when the outer circle is clicked
+    toggleCircle.addEventListener('click', function() {
+      if (isSoundActive) {
+        toggleCircle.classList.remove('active');
+        sound.pause();
+        sound.currentTime = 0; // Reset sound
+      } else {
+        toggleCircle.classList.add('active');
+        sound.play();
+      }
+      isSoundActive = !isSoundActive; // Toggle the state
+    });
+
+    // Full-screen functionality
+    fullscreenCircle.addEventListener('click', function() {
+      // Request full screen
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+        document.documentElement.msRequestFullscreen();
+      }
+
+      // Toggle inner circle visibility for full-screen
+      if (!isFullscreenActive) {
+        fullscreenInnerCircle.style.display = 'block'; // Show inner circle when full-screen is active
+      } else {
+        fullscreenInnerCircle.style.display = 'none'; // Hide when full-screen is not active
+      }
+
+      isFullscreenActive = !isFullscreenActive; // Toggle full-screen state
+    });
+  </script>
+
+</body>
+</html>
